@@ -8,6 +8,7 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="7808db88-149f-40e1-947e-31c7fc81ff83";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400,400i,600,700' rel='stylesheet'>
@@ -105,10 +106,6 @@
                                             <a href="/">Home</a>
                                         </li>
 
-                                        <li class="dropdown">
-                                            <a href="/about">About</a>
-                                        </li>
-
                                         @php
                                             $categories = App\Models\Category::all();
                                         @endphp
@@ -148,12 +145,8 @@
                                         </li>
 
                                         <li class="dropdown">
-                                            <a href="/faq">F.A.Q</a>
-                                        </li>
-
-                                        <li class="dropdown">
-                                            <a href="/contact">Contact Us</a>
-                                        </li>
+                                            <a href="/contact">Tentang</a>
+                                        </li>  
 
                                         <!-- Mobile search -->
                                         <li id="mobile-search" class="hidden-lg hidden-md">
@@ -177,11 +170,6 @@
                                         @else
                                             <a href="/login_member">Login </a>
                                         @endif
-                                    </li>
-                                    <li class="nav-search-wrap style-2 hidden-sm hidden-xs">
-                                        <a href="#" class="nav-search search-trigger">
-                                            <i class="fa fa-search"></i>
-                                        </a>
                                     </li>
                                     <li class="nav-cart">
                                         <div class="nav-cart-outer">
@@ -209,98 +197,12 @@
             @yield('content')
 
             <!-- Newsletter -->
-            <section class="newsletter" id="subscribe">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h4>Get the latest updates</h4>
-                            <form class="relative newsletter-form">
-                                <input type="email" class="newsletter-input" placeholder="Enter your email">
-                                <input type="submit" class="btn btn-lg btn-dark newsletter-submit"
-                                    value="Subscribe">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <!-- Footer Type-1 -->
-            <footer class="footer footer-type-1">
-                <div class="container">
-                    <div class="footer-widgets">
-                        <div class="row">
-
-                            <div class="col-md-3 col-sm-12 col-xs-12">
-                                <div class="widget footer-about-us">
-                                    <img src="/front/img/logo_dark.png" alt="" class="logo">
-                                    <p class="mb-30">Zenna Shop is a very slick and clean eCommerce template.</p>
-                                    <div class="footer-socials">
-                                        <div class="social-icons nobase">
-                                            <a href="/front/#"><i class="fa fa-twitter"></i></a>
-                                            <a href="/front/#"><i class="fa fa-facebook"></i></a>
-                                            <a href="/front/#"><i class="fa fa-google-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- end about us -->
-
-                            <div class="col-md-2 col-md-offset-1 col-sm-6 col-xs-12">
-                                <div class="widget footer-links">
-                                    <h5 class="widget-title bottom-line left-align grey">Information</h5>
-                                    <ul class="list-no-dividers">
-                                        <li><a href="/front/#">Our stores</a></li>
-                                        <li><a href="/front/#">About us</a></li>
-                                        <li><a href="/front/#">Business with us</a></li>
-                                        <li><a href="/front/#">Delivery information</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <div class="widget footer-links">
-                                    <h5 class="widget-title bottom-line left-align grey">Account</h5>
-                                    <ul class="list-no-dividers">
-                                        <li><a href="/front/#">My account</a></li>
-                                        <li><a href="/front/#">Wishlist</a></li>
-                                        <li><a href="/front/#">Order history</a></li>
-                                        <li><a href="/front/#">Specials</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <div class="widget footer-links">
-                                    <h5 class="widget-title bottom-line left-align grey">Useful Links</h5>
-                                    <ul class="list-no-dividers">
-                                        <li><a href="/front/#">Shipping Policy</a></li>
-                                        <li><a href="/front/#">Stores</a></li>
-                                        <li><a href="/front/#">Returns</a></li>
-                                        <li><a href="/front/#">Terms &amp; Conditions</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <div class="widget footer-links">
-                                    <h5 class="widget-title bottom-line left-align grey">Service</h5>
-                                    <ul class="list-no-dividers">
-                                        <li><a href="/front/#">Support</a></li>
-                                        <li><a href="/front/#">Warranty</a></li>
-                                        <li><a href="/front/#">FAQ</a></li>
-                                        <li><a href="/front/#">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> <!-- end container -->
-
-                <div class="bottom-footer">
+            <footer class="footer footer-type-1"> <div class="bottom-footer">
                     <div class="container">
-                        <div class="row">
-
-                            <div class="col-sm-6 copyright sm-text-center">
+                        <div class="row"><div class="col-sm-6 copyright sm-text-center">
                                 <span>
                                     &copy; 2023 Dealer Honda, Made by <a href="#">Agi</a>
                                 </span>
